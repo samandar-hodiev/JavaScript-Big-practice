@@ -1,32 +1,86 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#theme{
+
+
+#theme {
     /*background-color: lime;
-    */appearance: none;
+    */
+    appearance: none;
     border: 2px solid rgb(233, 233, 136);
     display: block;
     width: 70px;
     height: 32px;
     border-radius: 32px;
-    position: relative;
     cursor: pointer;
 }
 
-#theme::after{
-    content:" ";
+#theme::after {
+    content: " ";
     display: block;
     width: 28px;
     height: 28px;
-    background-color:white;
+    background-color: white;
     border-radius: 50%;
-    position: absolute;
+    transform: translateX(0px);
+    transition: all 0.3s ease;
 }
 
-#theme:checked::after{
-    right: 0;
-    background-color:rgb(53, 53, 53);
+#theme:checked::after {
+    background-color: rgb(53, 53, 53);
+    transform: translateX(37px);
+    transition: all 0.3s ease;
+}
+
+aside .form-input {
+    width: 90%;
+    height: 40px;
+    border-radius: 15px;
+    padding: 3px 16px;
+}
+
+
+
+
+
+.card {
+    box-shadow: 0 0 10px silver;
+    max-width: 300px;
+    transition: all 0.1s ease;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(142, 142, 142, 0.663);
+}
+
+.card-body {
+    padding: 6px 12px;
+}
+
+
+.card button {
+    padding: 12px;
+    border-radius: 12px;
+    border: solid 1px silver;
+}
+
+.card button:first-child {
+    background-color: #F94C10;
+    color: #fff;
+}
+
+.card button:last-child {
+    border: solid 1px silver;
+    color: #C70039;
+    padding: 12px 16px;
+}
+
+.card button:last-child:focus {
+    background-color: #C70039;
+    color: white;
 }

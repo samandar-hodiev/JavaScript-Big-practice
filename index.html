@@ -57,30 +57,90 @@
 
 
 
-
     <!-- --------------- main section started --------------- -->
-    <main>
+    <main class="flex">
         <!-- aside section started -->
-        <aside id="sidebar">
+        <aside id="sidebar" class="bg-[#900C3F] w-[300px] min-h-screen">
+            <form action="#" class="pl-4 pr-1 text-white pt-5">
 
+                <label for="name">
+                    <p>Enter film name</p>
+                    <input class="form-input" type="search" name="#" id="name" placeholder="Enter film name">
+                </label>
+
+                <label for="rating">
+                    <p>Enter film rating</p>
+                    <input class="form-input" type="number" name="#" id="rating" placeholder="Enter film rating" min="1"
+                        max="10">
+                </label>
+
+                <label for="genres">
+                    <p>Enter film genres</p>
+                    <select name="#" id="genres" class="form-input">
+                        <option value="select" disabled selected>Select film genres</option>
+                    </select>
+                </label>
+                <button type="submit"
+                    class="w-[90%] bg-[#F8DE22] text-black py-1 rounded-2xl focus:ring-4 ring-yellow-200 mt-4">
+                    search
+                </button>
+            </form>
         </aside>
         <!-- /aside section ended -->
 
-
         <!-- contents section started -->
-        <section id="contents">
+        <section id="contents" class="grow  p-4">
+            <div class="container mx-auto">
+                <div class="grid" id="cards">
+                    <div class="card">
+                        <img src="https:picsum.photos/id/211/300/210" alt="foto">
+                        <div class="card-body">
+                            <h2>film tittle</h2>
+                            <ul class="mb-4">
+                                <li>
+                                    <strong>Year:</strong>
+                                    <span>2024</span>
+                                </li>
+                                <li>
+                                    <strong>Rating:</strong>
+                                    <span>7</span>
+                                </li>
+                                <li>
+                                    <strong>Language:</strong>
+                                    <span>English</span>
+                                </li>
 
+                                <li>
+                                    <strong>Genre:</strong>
+                                    <span>Comedy</span>
+                                </li>
+                                <li>
+                                    <strong>Runtime:</strong>
+                                    <span>2h 23m</span>
+                                </li>
+                            </ul>
+                            <div class="flex justify-between">
+                                <button>Read more</button>
+                                <button>
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- contents section ended -->
     </main>
     <!-- ---------------/ main section ended --------------- -->
 
 
-
     
     <!-- --------------- footer section started --------------- -->
-    <footer>
-        <p><span id="year">2024</span>All movies</p>
+    <footer class="bg-[#900C3F] p-4">
+        <div class="container">
+            <p class="text-center text-white"> <span id="year">2024</span> All movies</p>
+        </div>
     </footer>
     <!-- ---------------/ footer section ended --------------- -->
 </body>
